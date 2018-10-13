@@ -34,7 +34,6 @@ def Cyclospectrum(peptide):
     peptide = FixPeptide(peptide)
     TableAminoAcidMass = CreateTableAminoAcidMass()
     res = []
-    res.append(0)
     i = 0
     k = 1
     while k < len(peptide):
@@ -48,10 +47,12 @@ def Cyclospectrum(peptide):
             i += 1
         i = 0
         k += 1
-    tmp = 0
-    for c in peptide:
-        tmp += int(TableAminoAcidMass.get(c))
-    res.append(tmp)
+    if len(peptide) != 0:
+        tmp = 0
+        for c in peptide:
+            tmp += int(TableAminoAcidMass.get(c))
+        res.append(tmp)
+        res.append(0)
     res.sort()
     string = ''
     for i in res:

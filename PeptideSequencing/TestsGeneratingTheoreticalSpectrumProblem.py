@@ -12,12 +12,17 @@ class TestGeneratingTheoreticalSpectrumProblem(unittest.TestCase):
 
     def test_1(self):
         result = Cyclospectrum('')
-        right_result = '0 0'
+        right_result = ''
         self.assertEqual(right_result, result)
 
     def test_2(self):
         result = Cyclospectrum('p')
-        right_result = '0 0'
+        right_result = ''
+        self.assertEqual(right_result, result)
+
+    def test_3(self):
+        result = Cyclospectrum('W')
+        right_result = '0 186'
         self.assertEqual(right_result, result)
 
 if __name__ == '__main__':

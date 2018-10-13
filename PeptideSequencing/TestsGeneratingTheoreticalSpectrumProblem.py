@@ -25,5 +25,15 @@ class TestGeneratingTheoreticalSpectrumProblem(unittest.TestCase):
         right_result = '0 186'
         self.assertEqual(right_result, result)
 
+    def test_4(self):
+        result = Cyclospectrum('G')
+        right_result = '0 57'
+        self.assertEqual(right_result, result)
+
+    def test_5(self):
+        result = Cyclospectrum(' G')
+        right_result = '0 57'
+        self.assertEqual(right_result, result)
+
 if __name__ == '__main__':
     unittest.main()

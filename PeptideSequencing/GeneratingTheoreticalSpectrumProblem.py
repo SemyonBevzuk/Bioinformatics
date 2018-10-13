@@ -1,5 +1,6 @@
 def CreateTableAminoAcidMass():
-    table = {' G': 57,
+    table = {
+     'G': 57,
      'A': 71,
      'S': 87,
      'P': 97,

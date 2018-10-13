@@ -3,7 +3,7 @@ import unittest
 from PeptideEncodingProblem import FindPeptideInDNA
 
 
-class TestProteinTranslationProblem(unittest.TestCase):
+class TestPeptideEncodingProblem(unittest.TestCase):
 
     def test_sample(self):
         result = FindPeptideInDNA('ATGGCCATGGCCCCCAGAACTGAGATCAATAGTACCCGTATTAACGGGTGA', 'MA')

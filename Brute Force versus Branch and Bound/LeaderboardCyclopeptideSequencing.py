@@ -139,8 +139,6 @@ def LeaderboardCyclopeptideSequencing(n, spectrum_str):
     spectrum = []
     for i in spectrum_str.split():
         spectrum.append(int(i))
-    spectrum_set = frozenset(spectrum)
-    res = []
 
     flag = True
     Leaderboard = set()

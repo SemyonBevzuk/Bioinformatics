@@ -23,11 +23,8 @@ def FrequentWords(text, k):
         if (Patterns[i] == maxCount):
             FrequentPatterns.append(i)
     FrequentPatterns.sort()
-    words = ''
-    for i in FrequentPatterns:
-        words += i+' '
-    print(words)
-    return words[:-1]
+    words = ' '.join(FrequentPatterns)
+    return words
 
 
 def main():
